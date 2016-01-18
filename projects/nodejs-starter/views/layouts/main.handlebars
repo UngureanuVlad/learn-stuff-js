@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="learnstuff">
+<head>
+  <title>Node Starter</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:500,700,300italic,400' rel='stylesheet' type='text/css'>
+
+</head>
+</head>
+<body>
+  {{> menu}}
+  <div class="header_container">
+    <div class="menu_header" id="menu_header">
+      <a id="menu_button" href="#" data-sidebar-button><img src="/img/menu.png" width="22px" height="22px"/></a>
+    </div>
+    <div class="header">
+
+    </div>
+    <div class="header_icon">
+      <a id="menu_button" href="#"><img src="/img/logo.png" width="32px" height="32px"/></a>
+    </div>
+  </div>
+  {{{body}}}
+  <div class="info_container">
+    <div class="info">
+      <div class="info_text">
+        Discover, learn, grow, share: welcome to the LearnStuff!
+      </div>
+    </div>
+  </div>
+  <div class="footer_container">
+    <div class="footer">
+      <p>some footer info</p>
+    </div>
+  </div>
+
+  <script src="/js/lib/jquery-2.1.4.min.js"></script>
+  <script src="/js/lib/menu.js"></script>
+</body>
+</html>
