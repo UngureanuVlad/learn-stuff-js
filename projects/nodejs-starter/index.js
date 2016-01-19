@@ -83,9 +83,20 @@ var handlebars = require('express-handlebars').create({
   require('./app/controllers/login.js')(app, userRepository, passport);
   require('./app/controllers/main.js')(app, userRepository, passport);
 
+  //socket.io
+  var io = require('socket.io')(server);
+  io.on('connection', function(socket){
+    socket.on('chat message', function(msg){
+      io.emit('chat message', msg);
+    });
+    socket.on('disconnect', function(){
+      // log
+    });
+  });
+
+
   // default error pages
   app.use(function(error, req, res, next) {
-    console.log(error);
     res.render("error");
   });
   app.use(function(req, res) {

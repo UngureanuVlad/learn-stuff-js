@@ -417,3 +417,12 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   pointer-events:none;
   opacity:0.5;
 }
+
+/* SOCKET IO CHAT ================================== */
+body { font: 13px Helvetica, Arial; }
+.profile_container form { padding: 3px;width: 100%; }
+.profile_container form input { border: 0; padding: 10px; width: 85%; margin-right: .5%; float: left; }
+.profile_container form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; height: 43px;}
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { color: #00BCD4; }
