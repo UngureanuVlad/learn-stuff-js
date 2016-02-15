@@ -1,0 +1,67 @@
+<!doctype html>
+<h1>
+	Profile
+</h1>
+<div class="row">
+	<div class="span10">
+		<form role="form" ng-submit="login()">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" ng-minlength="5"
+				class="form-control input-box" id="name" name="name"
+				ng-model="profile.name" required/>
+			</div>
+			<div class="form-group">
+				<label for="surname">Surname:</label>
+				<input type="text" ng-minlength="5"
+				class="form-control input-box" id="surname" name="surname"
+				ng-model="profile.surname" required/>
+			</div>
+			<div class="form-group">
+				<label for="address">Address:</label>
+				<input type="text" ng-minlength="5"
+				class="form-control input-box" id="address" name="address"
+				ng-model="profile.address" required/>
+			</div>
+
+			<div class="form-group">
+				<label for="address">Date of birth:</label>
+				<p class="input-group">
+					<input type="text" class="form-control input-box" uib-datepicker-popup="{{format}}" ng-model="profile.birthDate" is-open="birthDatePopup.opened"
+					ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+					<span class="input-group-btn">
+						<button type="button input-button" class="btn btn-default" ng-click="openBirthDatePopup()"><i class="glyphicon glyphicon-calendar"></i></button>
+					</span>
+				</p>
+			</div>
+
+			<div class="form-group">
+				<label for="files">Profile Piture:</label>
+				<div ngf-drop ngf-select ng-model="files" class="drop-box"
+				ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true"
+				accept="image/*,application/pdf"
+				ngf-pattern="'image/*,application/pdf'">Drop images here or click to upload</div>
+				<div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+	<div class="span10">
+		<div class="span8 space-box">
+			<label for="email">Name: {{profile.name}}</label>
+		</div>
+		<div class="span8 space-box">
+			<label for="email">Surname: {{profile.surname}}</label>
+		</div>
+		<div class="span8 space-box">
+			<label for="email">Address: {{profile.address}}</label>
+		</div>
+		<div class="span8 space-box">
+			<label for="email">Date of birth: {{profile.birthDate}}</label>
+		</div>
+		<div class="span8 space-box">
+			<label for="email">File logs: {{log}}</label>
+		</div>
+	</div>
+</div>

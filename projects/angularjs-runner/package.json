@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-starter",
+  "version": "1.0.0",
+  "description": "A started project for Learn Stuff - NodeJS course, ilustrating some of the features NodeJS and Express have to offer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UngureanuVlad/learn-stuff-js.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Services"
+  ],
+  "author": "Vlad Ungureanu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UngureanuVlad/learn-stuff-js/issues"
+  },
+  "homepage": "https://github.com/UngureanuVlad/learn-stuff-js#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "compression": "^1.6.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.13.0",
+    "mongodb": "^2.1.4",
+    "mongoose": "^4.3.6",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^1.4.4"
+  }
+}
